@@ -29,10 +29,14 @@ body {
 	border-radius: 5px;
 }
 
-.draft-no {
-	background-color: #f00;
+.attacker {
+	background-color: #0f0;
 }
 
-.draft-yes {
-	background-color: #0f0;
+.nonattacker {
+	background-color: #999;
+}
+
+.draft-no {
+	background-color: #f00;
 }
