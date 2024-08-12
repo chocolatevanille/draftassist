@@ -29,14 +29,18 @@ body {
 	border-radius: 5px;
 }
 
-.attacker {
+.bg-red {
+	background-color: #f00;
+}
+
+.bg-yellow{
+	background-color: #ff0;
+}
+
+.bg-green{
 	background-color: #0f0;
 }
 
-.nonattacker {
-	background-color: #999;
-}
-
-.draft-no {
-	background-color: #f00;
+.bg-blue{
+	background-color: #0ff;
 }
