@@ -33,14 +33,18 @@ body {
 	background-color: #f00;
 }
 
-.bg-yellow{
+.bg-yellow {
 	background-color: #ff0;
 }
 
-.bg-green{
+.bg-neutral {
+	background-color: #999;
+}
+
+.bg-green {
 	background-color: #0f0;
 }
 
-.bg-blue{
+.bg-blue {
 	background-color: #0ff;
 }

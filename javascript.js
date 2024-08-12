@@ -21,10 +21,6 @@ function buzzwole() {
 	document.getElementById("sylveon").classList.add("bg-red");
 }
 
-function umbreon() {
-	document.getElementById("cramorant").classList.add("bg-red");
-}
-
 function zoroark() {
 	document.getElementById("gardevoir").classList.add("bg-red");
 	document.getElementById("decidueye").classList.add("bg-red");
