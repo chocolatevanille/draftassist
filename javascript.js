@@ -57,11 +57,33 @@ function onPokemonClick(pokemonId) {
     updateBackgroundColor(pokemonId);
 }
 
+function resetPokemonData() {
+	for (let pokemon in pokemonValues) {
+		if (pokemonValues.hasOwnProperty(pokemon)) {
+			pokemonValues[pokemon] = 0;
+		}
+
+		let element = document.getElementById(pokemon);
+		element.classList.remove(...colorMap.values());
+		let colorClass = colorMap.get(pokemonValues[pokemon]);
+    	if (colorClass) {
+        	element.classList.add(colorClass);
+		}
+	}
+}
+
 document.addEventListener("DOMContentLoaded", function() {
-document.getElementById("venusaur").onclick = function() { onPokemonClick("venusaur"); };
-document.getElementById("blastoise").onclick = function() { onPokemonClick("blastoise"); };
-document.getElementById("buzzwole").onclick = function() { onPokemonClick("buzzwole"); };
-document.getElementById("zoroark").onclick = function() { onPokemonClick("zoroark"); };
+	document.querySelectorAll('.group').forEach(function(element) {
+		element.addEventListener('click', function() {
+			const overlayImage = this.parentElement.querySelector('.pokeball');
+			overlayImage.style.display = 'inline';
+		});
+	});
+	document.getElementById("reset__btn").onclick = function() { resetPokemonData(); };
+	document.getElementById("venusaur").onclick = function() { onPokemonClick("venusaur"); };
+	document.getElementById("blastoise").onclick = function() { onPokemonClick("blastoise"); };
+	document.getElementById("buzzwole").onclick = function() { onPokemonClick("buzzwole"); };
+	document.getElementById("zoroark").onclick = function() { onPokemonClick("zoroark"); };
 });
 
 
